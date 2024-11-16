@@ -158,7 +158,7 @@ public extension ProgressHUD {
 		}
 	}
 
-    class func zlm_show(status: String? = nil, interaction: Bool = false, delay: TimeInterval = 15) {
+    class func zlm_show(status: String? = nil, interaction: Bool = false, delay: TimeInterval = 60) {
         DispatchQueue.main.async {
             shared.setup(status: status, hide: true, interaction: interaction, delay: delay)
         }
